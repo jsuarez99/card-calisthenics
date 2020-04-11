@@ -37,7 +37,7 @@ class Card:
 		suiteName = self.getSuite()
 		faceVal = self.getFace()
 		
-		if faceVal == 0:
+		if suiteName == 'Joker':
 			return 'Joker'
 		else:
 			return f'{faceVal} of {suiteName}'
